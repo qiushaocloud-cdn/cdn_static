@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>登录 - Tower</title>
+  <meta name="renderer" content="webkit">
+  <meta name="baidu-site-verification" content="qLDoHdGnb64RHlkm">
+  <meta name="alexaVerifyID" content="SIgQikd9LazsFz9M1vPBaQyC4Gw">
+  <meta name="tower-version" content="22.11.8">
+
+  <link rel="dns-prefetch" href="https://avatar-alioss.tower.im">
+  <link rel="dns-prefetch" href="//atttachments.tower.im">
+
+  <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" id="favicon">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#44acb6">
+<meta name="msapplication-TileColor" content="#44acb6">
+<meta name="theme-color" content="#ffffff">
+
+  
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@TowerEverywhere">
+<meta name="twitter:title" content="Tower - ONES 旗下团队协作工具">
+<meta name="twitter:description" content="Tower 帮助你更高效的安排工作任务，管理项目进度，沉淀团队知识，让每个人走得更快，让团队走得更远。">
+<meta name="twitter:image" content="https://towerfiles.tower.im/tower-logo.png">
+<meta name="twitter:url" content="https://tower.im/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tower - ONES 旗下团队协作工具">
+<meta property="og:description" content="Tower 帮助你更高效的安排工作任务，管理项目进度，沉淀团队知识，让每个人走得更快，让团队走得更远。">
+<meta property="og:image" content="https://towerfiles.tower.im/tower-logo.png">
+<meta property="og:url" content="https://tower.im/">
+
+
+  <link rel="stylesheet" media="all" href="/packs/css/main/desktop-f608f9ae.css" />
+  
+
+
+  <link rel="stylesheet" media="all" href="/packs/css/tr_repository-af65f7f9.css" />
+  <script src="/packs/js/vendors~admin/admin~doc-editor~docs~download~help-admins~home/desktop~home/mobile~main/desktop~main/~6b248222-331b0baffb86a68a49a5.chunk.js"></script>
+<script src="/packs/js/vendors~admin/admin~docs~help-admins~home/desktop~home/mobile~main/desktop~main/mobile~popwindow~pub~459aa901-e8d62951c13dafa7bf19.chunk.js"></script>
+<script src="/packs/js/vendors~admin/admin~doc-editor~docs~home/desktop~home/mobile~main/desktop~main/mobile~popwindow~publ~654694e8-f3a3bcc0e4fe48ffcd50.chunk.js"></script>
+<script src="/packs/js/vendors~doc-editor~docs~help-admins~home/desktop~home/mobile~main/desktop~main/mobile~tr_crm~tr_orga~db7aceaf-321a12b0d60bbd93ca30.chunk.js"></script>
+<script src="/packs/js/main/desktop-8692d0bf10436f3fc837.js"></script>
+<script src="/packs/js/vendors~tr_organization~tr_repository-7f8e0c94fc1baed61cb1.chunk.js"></script>
+<script src="/packs/js/vendors~tr_repository-eb9c828d9fcaf7849254.chunk.js"></script>
+<script src="/packs/js/tr_repository-9f6a9422cfdf9198a0ed.js"></script>
+
+    <script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+
+
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="uQXbUKa3vBotQeybFAnexmtSP/tTTpTel6SMAVOVdv0ACmHrY5IuFUJ4yJwuz1pCuNln9jfsyiO6oA8zS3C4qQ==" />
+  <script type="text/javascript">
+  window._hmt = window._hmt || [];
+</script>
+<script src="https://hm.baidu.com/hm.js?e1fa918d304786452f7d6936febd93c6" async></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-100449807-1', 'auto');
+  ga('create', 'UA-100449807-2', 'auto', 'teamTracker');
+  if (navigator.sendBeacon) {
+    ga('set', 'transport', 'beacon');
+  }
+  ga('set', 'allowAdFeatures', false);
+  ga('set', 'dimension4', '桌面网页');
+
+  ga('set', {
+  });
+  ga('teamTracker.set', {
+  });
+
+  ga('send', 'pageview');
+  ga('teamTracker.send', 'pageview');
+
+  $(document).ready(function() {
+    if (window.tower && tower.stack) {
+      tower.stack.on('pageload', function() {
+        window.ga('set', 'location', window.location.href);
+        window.ga('send', 'pageview');
+
+        window.ga('teamTracker.set', 'location', window.location.href);
+        window.ga('teamTracker.send', 'pageview');
+      });
+    } else if (window.Turbolinks) {
+      document.addEventListener('turbolinks:load', function() {
+        window.ga('set', 'location', window.location.href);
+        window.ga('send', 'pageview');
+
+        window.ga('teamTracker.set', 'location', window.location.href);
+        window.ga('teamTracker.send', 'pageview');
+      })
+    }
+  })
+</script>
+
+    <script src="//unpkg.com/promise-polyfill@8.1.3/dist/polyfill.min.js"></script>
+<script src="/javascripts/web-office-sdk-v1.1.8.umd.js"></script>
+
+    <script type="text/javascript">
+  (function(root) {
+    window.zhad = [];
+    var tag = document.createElement('script'); tag.type ='text/javascript'; tag.async = true;
+    tag.src = '//unpkg.zhimg.com/@efe/zhad-tracker@1.4.1';
+    tag.onerror = function () {
+      var img = new Image();
+      img.src = '//sugar.zhihu.com/log_fe?js_url=' + window.encodeURIComponent(tag.src) + '&t=' + (+ new Date());
+    }
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tag, s);
+    })(window);
+</script>
+  <!-- start Mixpanel --><script type="text/javascript">
+    (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+  mixpanel.init('72ddb7dd79e1c48afb3e27e0efd70a74', {
+    loaded: function(mixpanel) {
+      document.dispatchEvent(new Event('MixpanelLoaded'));
+    }, track_pageview: false
+  });
+
+  mixpanel.register({
+  });
+
+  mixpanel.track("Page View");
+
+  $(document).ready(function() {
+    if (window.tower && tower.stack) {
+      tower.stack.on('pageload', function() {
+        mixpanel.track("Page View");
+      });
+    } else if (window.Turbolinks) {
+      document.addEventListener('turbolinks:load', function() {
+        mixpanel.track("Page View");
+      })
+    }
+  })
+</script><!-- end Mixpanel -->
+
+  
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js" referrerpolicy="origin"></script>
+    <script src="https://open.work.weixin.qq.com/wwopen/js/jwxwork-1.0.0.js" referrerpolicy="origin"></script>
+</head>
+
+<body class="
+  
+  
+">
+  <div id="page-loading-mask"></div>
+  
+
+  <div class="wrapper">
+    
+
+<div class="page" id="page-signin">
+  <div class="sign-page wechat-sign-in-page">
+    <div class="hd">
+      <a class="link-logo" href="/">
+        <span class="twr twr-logo"></span>
+</a>    </div>
+
+    <div class="bd">
+      <div class="box">
+        <div class="wechat-sign-in sigin-section">
+          <h1 class="bd-title">微信扫码登录</h1>
+          <div id="qrcode-wrapper" class="qrcode-wrapper"></div>
+          <div class="desc">
+            <p>
+              <label for="wx-login-remember-me">
+                <input type="checkbox" name="wx_login_remember_me" id="wx-login-remember-me" checked />
+                下次自动登录
+              </label>
+            </p>
+        </div>
+
+        <div class="signin-footer">
+          <div class="signin-dividing">
+            <span class="content">其它登录方式</span>
+          </div>
+
+          <div class="signin-methods">
+            <a class="link-mobile-signin" href="/users/mobile_sign_ins/new">
+              <i class="twr twr-mobile"></i> 手机号
+</a>            <a class="link-email-signin" href="/users/account_sign_in">
+              <i class="twr twr-lock"></i> 邮箱
+</a>              <a class="link-lark-signin" href="/feishu/launchpad">
+                <i class="twr twr-lark"></i> 飞书
+</a>              <a class="link-wxwork-signin" href="/tr_wework/sso/new">
+                <i class="twr twr-wxwork"></i> 企业微信
+</a>              <a class="link-dingtalk-signin" href="/tr_dingtalk/qrcode_signin/new">
+                <i class="twr twr-dingtalk"></i> 钉钉
+</a>          </div>
+
+            没有账号？<a href="/users/sign_up/new">立即注册 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer light ">
+</div>
+
+</div>
+
+<script>
+  new WxLogin({
+    id: 'qrcode-wrapper',
+    appid: 'wxa2402e6aefdd4747',
+    scope: 'snsapi_login',
+    redirect_uri: encodeURIComponent('https://tower.im/auth/open_wechat/callback'),
+    state: '9d6a0a97c01858af41c1ee4572579c73c3198aef69622afb',
+    href: 'https://tower.im/wechat-signin.css'
+  });
+</script>
+
+  </div>
+
+  <input type="hidden" id="server-time" value="2022-12-08 16:14:50">
+  <input type="hidden" id="link-target-value" value="_blank">
+
+
+
+  <script>
+//<![CDATA[
+window.gon={};gon.d18n_enabled=null;gon.d18n_muted=null;gon.upload_file_size_limit=200;gon.max_upload_file_size_limit=2048;gon.has_trial_choice=false;gon.isBrowserCompatible=false;gon.sortableFallback=null;gon.editor_lenient_mode=null;gon.permissions={};gon.triggered_guides=[];
+//]]>
+</script>
+
+  <a id="back-to-top" href="javascript:;">
+    <span class="twr twr-angle-up"></span>
+  </a>
+
+  
+  <script id="IntercomSettingsScriptTag">window.intercomSettings = {"hide_default_launcher":null,"custom_launcher_selector":"#link-trigger-intercom","app_id":"xbtsuf77"};(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xbtsuf77';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+
+  <tr-intercom-fallback>
+    <a href="javascript:;" id="link-to-help">?</a>
+    <div class="customer-service-card">
+      <div class="title">你好 👋</div>
+      <div class="description">这里是 Tower 团队，有任何问题，欢迎扫码在微信上联系我们。</div>
+      <div class="qrcode">
+        <img alt="扫码在微信上联系我们" src="/packs/images/customer-service-qrcode-a8adc89f6b081661e13b52dba8d5b5a8.jpg" />
+      </div>
+      <div class="help-tel">或直接拨打 400-803-2202</div>
+    </div>
+  </tr-intercom-fallback>
+
+  
+    <tr-visitor-presales-support-widget>
+    <div class="float-button">
+      <img class="background" src="/packs/images/presales-icon-9d9cad82d36f2b641328212d1522bdf4.png" />
+    </div>
+    <div class="popover" data-state="close">
+      <div class="popover-arrow"></div>
+      <div class="popover-content">
+          <img class="manager-qrcode" src="https://towerfiles.tower.im/presales_web/visitor-qrcode.png" />
+          <div class="popover-content">扫码添加微信咨询</div>
+      </div>
+    </div>
+  </tr-visitor-presales-support-widget>
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="关闭图片"></button>
+        <button class="pswp__button pswp__button--fs" title="切换全屏"></button>
+        <button class="pswp__button pswp__button--zoom" title="缩放图片"></button>
+        <button class="pswp__button pswp__button--rotate" title="旋转图片">
+          <span class="twr twr-rotate-left"></span>
+        </button>
+        <a href="" class="pswp__button pswp__button--newtab" title="新窗口预览" target="_blank">
+          <span class="twr twr-move"></span>
+        </a>
+        <a href="" class="pswp__button pswp__button--download" title="下载图片" download>
+          <span class="twr twr-download"></span>
+        </a>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="上一张 (←)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="下一张 (→)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+</body>
+</html>
